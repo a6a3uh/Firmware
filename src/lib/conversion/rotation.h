@@ -84,9 +84,7 @@ enum Rotation {
 	ROTATION_PITCH_9_YAW_180 = 32,
 	ROTATION_PITCH_45 = 33,
 	ROTATION_PITCH_315 = 34,
-	// skipping some numbers to be in correspondence with mavlink library
-	// https://github.com/mavlink/c_library_v2/blob/d8fcf0a694dc11b3f83b89a0970e3d8c4e48d418/common/common.h#L828
-	ROTATION_ROLL_90_YAW_270 = 37,
+	ROTATION_ROLL_90_YAW_270 = 35,
 	ROTATION_MAX
 };
 
@@ -132,6 +130,7 @@ const rot_lookup_t rot_lookup[] = {
 	{  0,   9, 180 },
 	{ 0,   45,   0 },
 	{ 0,  315,   0 },
+	{ 90,   0, 270 },
 };
 
 /**
