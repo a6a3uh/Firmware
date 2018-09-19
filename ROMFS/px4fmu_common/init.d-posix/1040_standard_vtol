@@ -39,11 +39,8 @@ then
 
 	param set WEST_EN 1
 
-	# this is for roll 270 yaw 270
-	param set SENS_BOARD_ROT 26
-
 	# this is for roll 90 yaw 270
-	# param set SENS_BOARD_ROT 37
+	param set SENS_BOARD_ROT 35
 fi
 
 set MAV_TYPE 22
