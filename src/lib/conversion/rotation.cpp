@@ -278,17 +278,10 @@ rotate_3f(enum Rotation rot, float &x, float &y, float &z)
 		}
 
 	case ROTATION_ROLL_90_YAW_270: {
-			// this is how yaw 270 then roll 90 should be for a forward-right-down
-			// tmp = x;
-			// x = -z;
-			// z = y;
-			// y = -tmp; //-x;
-
-			// this is just a copy of ROTATION_ROLL_270_YAW_270
-			// for testing purposes
-			tmp = z; z = -y; y = tmp;
-			tmp = x; x = y; y = -tmp;
-
+			tmp = x;
+			x = -z;
+			z = y;
+			y = -tmp;
 			return;
 		}
 	}
